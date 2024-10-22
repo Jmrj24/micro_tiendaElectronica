@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Jmrj24/app_hotel_ciudades.git
+          uri: https://github.com/Jmrj24/micro_tiendaElectronica.git
           searchPaths: config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
