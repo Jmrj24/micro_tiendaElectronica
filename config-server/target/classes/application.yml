@@ -4,12 +4,12 @@ server:
 spring:
   application:
     name: config-server
-
+    
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/Jmrj24/micro_tiendaElectronica.git
+          uri: https://github.com/Jmrj24/app_hotel_ciudades.git
           searchPaths: config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
