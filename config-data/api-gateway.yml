@@ -10,7 +10,7 @@ spring:
           lower-case-service-id: true
 
 server:
-  port: 8082
+  port: 443
 
 eureka:
   client:
