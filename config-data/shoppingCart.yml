@@ -1,13 +1,13 @@
 spring:
   application:
-    name: shoppingCart
+    name: shoppingcart
 
   jpa:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL8Dialect
   datasource:
-    url: jdbc:mysql://localhost:3306/service_shoppingcart?serverTimezone=UTC
+    url: jdbc:mysql://service_shoppingcart_bd:3306/service_shoppingcart?serverTimezone=UTC
     username: root
     password: admin    
 
@@ -17,4 +17,4 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://eureka-server:8761/eureka

@@ -1,0 +1,10 @@
+com\example\sales\service\ISaleService.class
+com\example\sales\dto\ProductDTO.class
+com\example\sales\dto\ShoppingCartDTO.class
+com\example\sales\SalesApplication.class
+com\example\sales\dto\SaleDTO.class
+com\example\sales\service\SaleService.class
+com\example\sales\model\Sale.class
+com\example\sales\controller\SaleController.class
+com\example\sales\repository\IAPIShoppingCart.class
+com\example\sales\repository\ISaleRepository.class

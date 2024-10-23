@@ -1,0 +1,9 @@
+com\example\shoppingCart\dto\ProductDTO.class
+com\example\shoppingCart\model\ShoppingCart.class
+com\example\shoppingCart\repository\IShoppingCartRepository.class
+com\example\shoppingCart\ShoppingCartApplication.class
+com\example\shoppingCart\dto\ShoppingCartDTO.class
+com\example\shoppingCart\service\ShoppingCartService.class
+com\example\shoppingCart\repository\IAPIProducts.class
+com\example\shoppingCart\service\IShoppingCartService.class
+com\example\shoppingCart\controller\ShoppingCartController.class
