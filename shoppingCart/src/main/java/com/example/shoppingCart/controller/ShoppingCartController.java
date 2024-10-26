@@ -38,7 +38,7 @@ public class ShoppingCartController {
     @PutMapping("/edit/{code}")
     public String editShoppingCart(@RequestBody List<Long> listProducts,
                                             @PathVariable Long code) {
-        return cartServ.editShoppingCart(listProducts, code) +" "+ cartServ.getShoppingCartById(code);
+        return cartServ.editShoppingCart(listProducts, code);
     }
 
     // EndPoint para traer un carrito y sus productos

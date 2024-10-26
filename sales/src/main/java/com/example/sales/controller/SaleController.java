@@ -28,7 +28,7 @@ public class SaleController {
     }
 
     // EndPoint para eliminar una venta
-    @DeleteMapping("/delete")
+    @DeleteMapping("/delete/{codeSale}")
     public String deleteSale(@PathVariable Long codeSale) {
         saleServ.deleteSale(codeSale);
         return "Venta eliminada de forma exitosa!";
