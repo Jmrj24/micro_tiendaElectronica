@@ -1,11 +1,47 @@
-<h1 align="center">Tienda Electrónica |Microservicios|</h1>
-Este proyecto tuvó como objetivo crear una tienda de electrodomésticos online basada en una arquitectura de microservicios, para ofrecer una experiencia de compra fluida y eficiente. El sistema se compone de tres microservicios interconectados, cada uno encargado de una función clave en el proceso de compra:
+# Tienda de Electrodomésticos Online
 
+Este proyecto tiene como objetivo crear una tienda de electrodomésticos online utilizando una arquitectura de microservicios. El sistema está diseñado para ofrecer una experiencia de compra fluida y eficiente, con tres microservicios interconectados para gestionar productos, carritos de compras y ventas.
 
-Microservicio de Productos: Este servicio gestiona el catálogo de productos disponibles en la tienda, permitiendo listar los electrodomésticos y proporcionando detalles esenciales como código, nombre, marca y precio individual de cada artículo. Este servicio garantiza que la información de los productos esté siempre actualizada y sea accesible para otros servicios y usuarios.
+## Tecnologías Utilizadas
 
-Microservicio de Carrito de Compras: Este microservicio administra el carrito de compras de cada usuario, permitiéndoles agregar y quitar productos a su carrito. Cada carrito tiene un identificador único y un campo que almacena el precio total de los productos agregados. Este servicio es esencial para mantener la interacción del usuario con la tienda, asegurando que el proceso de compra sea claro y transparente.
+- **Lenguaje**: Java
+- **Frameworks**: 
+  - Spring Boot
+  - Spring Cloud (Service Registry, Service Discovery, Load Balancing, Circuit Breaker, API Gateway, Config Server)
+  - Spring Data JPA
+- **Base de Datos**: MySQL
+- **ORM**: Hibernate
+- **Pruebas**: Postman
+- **Contenerización**: Docker
+- **Control de Versiones**: Git, GitHub
 
-Microservicio de Ventas: Este servicio se encarga de registrar todas las ventas realizadas en la plataforma. Cada venta recibe un número de identificación único y una fecha, y está asociada a un carrito de compras específico. A través de esta asociación, el microservicio de ventas puede calcular el monto total de la venta al consultar el carrito de compras, y obtener la lista de productos vendidos mediante la integración con el servicio de productos. Esto asegura que cada venta esté completamente documentada y que la información de los productos vendidos sea precisa.
+## Arquitectura
 
-La comunicación entre estos tres microservicios permite una integración fluida y un manejo eficiente de productos, carritos y ventas, brindando a los usuarios una experiencia de compra óptima.
+La aplicación está basada en una arquitectura de microservicios que incluye tres componentes principales:
+
+1. **Microservicio de Productos**:
+   - Gestiona el catálogo de productos disponibles en la tienda.
+   - Proporciona información detallada como código, nombre, marca y precio.
+   - Garantiza que la información de los productos esté siempre actualizada.
+
+2. **Microservicio de Carrito de Compras**:
+   - Permite a los usuarios agregar y quitar productos de su carrito.
+   - Cada carrito tiene un identificador único y almacena el precio total de los productos agregados.
+   - Facilita la interacción del usuario con la tienda y asegura un proceso de compra transparente.
+
+3. **Microservicio de Ventas**:
+   - Registra todas las ventas realizadas en la plataforma.
+   - Cada venta está asociada a un carrito de compras específico y contiene la información de los productos vendidos.
+   - Calcula el monto total de la venta al consultar el carrito de compras.
+
+## Patrones de Diseño Implementados
+
+- **Service Registry & Service Discovery**: Para la localización y descubrimiento de microservicios en un entorno distribuido.
+- **Load Balancing**: Distribución de las solicitudes entre varias instancias de los servicios para mejorar la escalabilidad.
+- **Circuit Breaker**: Para prevenir fallos en cascada y mejorar la resiliencia del sistema.
+- **API Gateway**: Para centralizar el acceso a los microservicios y simplificar la gestión de las rutas.
+- **Config Server**: Para gestionar la configuración centralizada de los microservicios.
+
+Pruebas
+Se utilizaron pruebas de API con Postman para verificar el funcionamiento de los microservicios, tanto en el entorno local como en un entorno cercano a producción.
+
